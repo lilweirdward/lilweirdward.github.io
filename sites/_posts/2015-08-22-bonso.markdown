@@ -1,0 +1,11 @@
+---
+layout:		post
+title:		"BONSO"
+image:		bonso
+permalink:	/:title
+tags:		[web]
+
+---
+Around January of 2014, CardShirt voluntarily revoked its RSO status, and set out as its own non-profit company separate from the University of Louisville. The rebranded themselves as BONSO, and I followed them as their web developer. The following is the official description that was written for the website: “Bonso is a legal non-for-profit based in the Louisville area that believes in creating the needed change in society. In order to generate the funds to Benefit Others Needing Support for Opportunities, Bonso sells affordable, high quality promotional products to its consumers while designating a portion of the sales revenue to the community through either a scholarship or donation. The company also provides invaluable, real-world experience to our student workers by providing the unique opportunity to operate in each division of the business structure.”
+	
+I never completely finished the website before BONSO rebranded itself back to CardShirt and became an RSO again, but it still was one of my proudest websites and a huge turning point in how I thought about design. 

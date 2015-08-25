@@ -1,0 +1,41 @@
+---
+layout:	default
+---
+
+<div class="section intro">
+
+  <a href="/"><img class="logo" src="/images/logo.png"></a>
+  <h1>Zach Woodward</h1>
+
+</div>
+
+<div class="section blog">
+
+	<div class="container">
+
+		<h1>All the Blog Posts</h1>
+		<p>
+			Hopefully one day I'll get to paginate this bad boy.
+		</p>
+
+	</div>
+	{% for post in site.categories.blog %}
+	<div class="post {{ post.image }}">
+
+		<a href="{{ post.url | prepend: site.baseurl }}">
+
+		  <div class="layer">
+
+		    <h1>{{ post.title }}</h1>
+		    <p>
+		        {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
+		    </p>
+
+		  </div>
+
+		</a>
+
+	</div>
+	{% endfor %}
+
+</div>

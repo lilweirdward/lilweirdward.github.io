@@ -2,22 +2,159 @@
 layout: default
 ---
 
-<div class="home">
+<div class="section intro">
 
-  <h1 class="page-heading">Posts</h1>
+  <a href="/"><img class="logo" src="/images/logo.png"></a>
+  <h1>Zach Woodward</h1>
+  <p>
+    Insert simple but non-cheesy "mission statement" here
+  </p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
+<div class="section portfolio">
+
+  <div class="container">
+
+    <h1>My Work</h1>
+    <p>
+      I’ve been building various websites for over three years now, and I’ve come a long way from my very first website – a wedding website for my now-wife and I. This section of the portfolio is designed to showcase my best work, which is mostly the things that I’ve made most recently. However, since I’ve worked in a breadth of languages, some progression in my learning should become apparent through various projects undertaken at different times. While I may not have five years of experience or entire libraries to showcase, the fact that I have a mostly non-school related portfolio of websites that I’ve built on my own time is something that I’m proud of.
+    </p>
+
+  </div>
+
+</div>
+{% assign sorted_websites = site.categories.sites | sort: 'title' %}
+{% for website in sorted_websites limit:4 %}
+{% if website.tags contains 'web' %}
+<a href="{{ website.url | prepend: site.baseurl }}">
+
+  <div class="fw {{ website.image }}">
+
+    <div class="layer">
+
+      <h1>{{ website.title }}</h1>
+
+    </div>
+
+  </div>
+
+</a>
+{% endif %}
+{% endfor %}
+
+<a href="/sites/" class="more">mockups, designs, & more</a>
+
+
+
+<div class="section about">
+
+  <div class="container">
+
+    <h1>The Man Behind the Weirdward</h1>
+    <p>
+      I'm currently in my early 20's, already married with one dog, a recent graduate from the University of Louisville College of Business, and a semi-avid soccer fan (#LouCityFC) and FIFA player. I like to write and tweet probably-not-funny things, make sick websites, hang out with friends and family, and end list sentences on a fourth item. My wife also loves penguins. 
+    </p>
+    <p>
+      What can I say? I'm a man of few words, and one penguin.
+    </p>
+    <img src="/images/mascot.png" />
+
+  </div>
+
+</div>
+
+
+
+
+<div class="section blog">
+
+  <div class="container">
+
+    <h1>Blog</h1>
+    <p>
+      I always told myself that I wanted to have some sort of outlet to write things that no one needs to read. You know, a two-paragraph review of the movie I just watched saying that it's basically exactly how all the critics said it was except for that one thing? If I really want, I might throw in a retrospective piece on this cool new thing I did at work so you random passer-bys can be jealous of my cool, developer lifestyle.
+    </p>
+    <p>
+      Yeah, if I were you, I would probably not read any of these posts. Seriously, I have Google Analytics turned on, so I'll know if you did, and I'll just feel bad that someone made such a poor mistake. Just let me write terrible things in peace, please.
+    </p>
+
+  </div>
+
+  {% for post in site.categories.blog limit:2 %}
+  <div class="post {{ post.image }}">
+
+    <a href="{{ post.url | prepend: site.baseurl }}">
+
+      <div class="layer">
+
+        <h1>{{ post.title }}</h1>
+        <p>
+            {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
+        </p>
+
+      </div>
+
+    </a>
+
+  </div>
+  {% endfor %}
+  <a href="/blog/" class="more">all blog posts</a>
+    <!-- <div class="post">
+        <div class="layer">
+            <h1>Some Sort of Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate molestie lacus sit amet interdum. Vivamus sit amet neque felis. Suspendisse nisl est, condimentum elementum metus in, sodales porta nibh.
+            </p>
+        </div>
+    </div> -->
+</div>
+
+
+
+
+<div class="section contact">
+
+  <div class="container">
+
+    <div class="img"></div>
+    <h1>Talk (not dirty) To Me</h1>
+    <p>
+        I was going to have a form here for you to email me (seriously, check the code - it's right there all in the commented out parts), but then I remembered that this whole site is static and I can't write any PHP code for it. Oh well. Here are some fancy links to a few websites that you can find me on!
+    </p>
+    <a href="#"><i class="fa fa-github fa-2x"></i></a>
+    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+    <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+    <a href="#"><i class="fa fa-envelope-o fa-2x"></i></a>
+    <!-- <form>
+            <div class="group">
+                <label for="name">Your Name</label>
+                <input type="text" name="name">
+            </div>
+            <div class="group">
+                <label for="email">Email Address</label>
+                <input type="text" name="email">
+            </div>
+            <div class="group">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject">
+            </div>
+            <div class="group">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+            </div>
+            <input type="submit" value="Send">
+        </form> -->
+  </div>
+
+</div>
+
+
+
+<div class="section footer">
+
+  <p>&copy; Zach Woodward 2015</p>
+  
 </div>

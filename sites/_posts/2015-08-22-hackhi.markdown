@@ -1,0 +1,9 @@
+---
+layout:		post
+title:		"Hack HI!"
+image:		hackhi
+permalink:	/:title
+tags:		[web]
+
+---
+While working at Humana as a summer intern this past summer, I had the opportunity to help organize their first-ever intern hackathon. I worked with a committee to organize sponsors, speakers, rules, meals, and everything else that came with setting up a 36-hour hackathon. I also volunteered to build a website to advertise the hackathon and inform attendees of the rules and schedule of the event. We had a small timeframe, and I still had my normal intern project to keep up with, but I found the spare time necessary to build and refine a simple Single Page Application (SPA), with a few cool JQuery and SASS effects to boot. By the end of the internship, I’d received as much praise for the website as I had for anything else I did that summer, and I hope to help the upcoming intern class refine it further for the second annual HackHI!

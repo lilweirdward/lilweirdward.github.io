@@ -1,0 +1,74 @@
+---
+layout:	default
+---
+
+<div class="section intro">
+
+	<a href="/"><img class="logo" src="/images/logo.png"></a>
+	<h1>Zach Woodward</h1>
+
+</div>
+
+<div class="section content">
+
+	<div class="container">
+
+		<h1>Web Development</h1>
+		<p>
+			Below are all of websites that I've ever designed and stored on my computer - i.e., the ones that I'm not horribly ashamed of.
+		</p>
+
+	</div>
+
+</div>
+
+{% assign sorted_websites = site.categories.sites | sort: 'title' %}
+{% for website in sorted_websites %}
+{% if website.tags contains 'web' %}
+<a href="{{ website.url | prepend: site.baseurl }}">
+
+  <div class="fw {{ website.image }}">
+
+    <div class="layer">
+
+      <h1>{{ website.title }}</h1>
+
+    </div>
+
+  </div>
+
+</a>
+{% endif %}
+{% endfor %}
+
+<div class="section content">
+
+	<div class="container">
+
+		<h1>Design Projects</h1>
+		<p>
+			While I certainly don’t consider myself a graphic designer (you won’t see any legitimate logo work in here to speak of, for instance), I’m artistic enough that I enjoy dabbling in the world of digital design. From using Photoshop to mock up website proposals for clients to making paper handout designs that professors call the best student design they’ve ever seen, I’ve had a go at pretty much all of it. It’s something that I consider very unique about myself, since most developers that I’ve met don’t understand the world of design at best, and loathe it at worst. Plus, having design skills makes me more valuable when I sell myself for side projects – I don’t just design cool sites or come up with insane backend functionality, I can and will do both.
+		</p>
+
+	</div>
+
+</div>
+
+{% assign sorted_websites = site.categories.sites | sort: 'title' %}
+{% for website in sorted_websites %}
+{% if website.tags contains 'design' %}
+<a href="{{ website.url | prepend: site.baseurl }}">
+
+  <div class="fw {{ website.image }}">
+
+    <div class="layer">
+
+      <h1>{{ website.title }}</h1>
+
+    </div>
+
+  </div>
+
+</a>
+{% endif %}
+{% endfor %}

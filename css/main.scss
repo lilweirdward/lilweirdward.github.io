@@ -2,19 +2,32 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@import "bourbon/bourbon";
 
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: 'Merriweather', serif;
 $base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$header-font-family: 'Amatic SC', cursive;
+$small-font-size:  $base-font-size * 0.875;
 
+$blue: #1C2A4E;
+$green: #4EB96F;
+$yellow: #FFDC5D;
+$black: #232323;
+
+$button-size : 1.25rem; 
+$transition: .3s;
+
+/**
+ * LMAO not using
+*/
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
+// $text-color:       #111;
+// $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -47,6 +60,7 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
+        "mixins",
         "layout",
         "syntax-highlighting"
 ;
