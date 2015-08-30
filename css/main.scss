@@ -35,10 +35,14 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    	800px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:          	600px;
+$on-laptop:        	800px;
+$large-phone:		481px;
+$tablet:			768px;
+$laptop:			1030px;
+$high-res:			1440px;
 
 
 
@@ -50,7 +54,7 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media only screen and (min-width: $device) {
         @content;
     }
 }

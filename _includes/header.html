@@ -6,11 +6,69 @@
 
 <div class="section header">
 
-  <div class="container">
+  <!-- <div class="container"> -->
 
-    <div class="">
+    <ul class="navitems">
+    	<li>
+    		<a href="#">Home</a>
+    	</li>
+    	<li>
+    		<a href="#">Portfolio</a>
+    	</li>
+    	<li>
+    		<a href="#">Blog</a>
+    	</li>
+    	<li>
+    		<a href="#">Contact</a>
+    	</li>
+    </ul>
+
+    <div class="container">
+    	<p>Latest Post</p>
+    	<div class="section blog">
+    		{% for post in site.categories.blog limit:1 %}
+			<div class="post {{ post.image }}">
+
+				<a href="{{ post.url | prepend: site.baseurl }}">
+
+				<div class="layer">
+
+					<h1>{{ post.title }}</h1>
+					<p>
+					    {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
+					</p>
+
+				</div>
+
+				</a>
+
+			</div>
+			{% endfor %}
+    	</div>
+    	<p>Latest Portfolio Site</p>
+    	{% assign sorted_websites = site.categories.portfolio | sort: "priority" %}
+		{% for website in sorted_websites limit:1 %}
+		<a href="{{ website.url | prepend: site.baseurl }}">
+
+		  <div class="fw {{ website.image }}">
+
+		    <div class="layer">
+
+		      <h1>{{ website.title }}</h1>
+
+		    </div>
+
+		  </div>
+
+		</a>
+		{% endfor %}
     </div>
 
-  </div>
+    <div class="social">
+	    <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+	    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+	    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+	    <a href="mailto:{{ site.email }}" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
+	</div>
   
 </div>
