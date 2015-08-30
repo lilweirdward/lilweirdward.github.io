@@ -4,6 +4,7 @@ title:		"CardShirt"
 image:		cardshirt
 permalink:	/:title
 tags:		[web]
+priority:	2
 
 ---
 # My Biggest Client So Far

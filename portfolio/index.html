@@ -22,7 +22,7 @@ layout:	default
 
 </div>
 
-{% assign sorted_websites = site.categories.sites | sort: 'title' %}
+{% assign sorted_websites = site.categories.portfolio | sort: 'title' %}
 {% for website in sorted_websites %}
 {% if website.tags contains 'web' %}
 <a href="{{ website.url | prepend: site.baseurl }}">
@@ -54,7 +54,7 @@ layout:	default
 
 </div>
 
-{% assign sorted_websites = site.categories.sites | sort: 'title' %}
+{% assign sorted_websites = site.categories.portfolio | sort: 'title' %}
 {% for website in sorted_websites %}
 {% if website.tags contains 'design' %}
 <a href="{{ website.url | prepend: site.baseurl }}">

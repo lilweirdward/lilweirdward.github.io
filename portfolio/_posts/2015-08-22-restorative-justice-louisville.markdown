@@ -4,6 +4,7 @@ title:		"Restorative Justice Louisville"
 image:		rjlou
 permalink:	/:title
 tags:		[web]
+priority:	4
 
 ---
 By the second semester of my junior year – early 2014, to be exact – at the University of Louisville, I’d been working at Blackstone Media for almost a year, and was starting to feel like a pro at making websites. I already had a certain design style that I was proud of, and I’d written enough C# and Coldfusion at Blackstone to feel confident that I could build a solid website on my own. I got my opportunity to try my new skills out in my CIS 420 class, which allows us to build an I.T. system (99% of the time this just means a website) for a real non-profit organization in Louisville. Our project was for a group called Restorative Justice Louisville, or RJLou for short, and our class was split into three teams that each competed to build the perfect website for the client. 

@@ -26,9 +26,8 @@ layout: default
   </div>
 
 </div>
-{% assign sorted_websites = site.categories.sites | sort: 'title' %}
+{% assign sorted_websites = site.categories.portfolio | sort: "priority" %}
 {% for website in sorted_websites limit:4 %}
-{% if website.tags contains 'web' %}
 <a href="{{ website.url | prepend: site.baseurl }}">
 
   <div class="fw {{ website.image }}">
@@ -42,10 +41,9 @@ layout: default
   </div>
 
 </a>
-{% endif %}
 {% endfor %}
 
-<a href="/sites/" class="more">mockups, designs, & more</a>
+<a href="/portfolio/" class="more">mockups, designs, & more</a>
 
 
 
@@ -124,10 +122,10 @@ layout: default
     <p>
         I was going to have a form here for you to email me (seriously, check the code - it's right there all in the commented out parts), but then I remembered that this whole site is static and I can't write any PHP code for it. Oh well. Here are some fancy links to a few websites that you can find me on!
     </p>
-    <a href="#"><i class="fa fa-github fa-2x"></i></a>
-    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-    <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
-    <a href="#"><i class="fa fa-envelope-o fa-2x"></i></a>
+    <a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+    <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+    <a href="mailto:{{ site.email }}" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
     <!-- <form>
             <div class="group">
                 <label for="name">Your Name</label>

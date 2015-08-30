@@ -4,6 +4,7 @@ title:		"Zach's Christmas List"
 image:		christmas
 permalink:	/:title
 tags:		[web]
+priority:	3
 
 ---
 We all make physical Christmas lists as kids, right? We probably hand wrote most of them once upon a time, and then when technology started getting more prominent, my siblings and I usually just typed them up really quickly in a Word document. As I got older and started learning more about computers and whatnot, I started seeing how fancy of Christmas lists I could make – stuff like pictures of my items and the names of places they could be bought were common inclusions. I probably could be more mature these days and not make physical Christmas lists anymore, or I could see it as an opportunity to test how much I’ve learned over the past year on developing websites. Yeah, I picked the second option for the past two years.
