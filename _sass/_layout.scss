@@ -423,6 +423,7 @@
         background-size: cover;
         background-position: center;
         z-index: 1;
+        @include transition(background-image $transition);
         @include media-query($tablet) {
             position: fixed;
             top: 0; right: 0;
@@ -436,10 +437,10 @@
             @include media-query($tablet) {
                 position: absolute;
                 top: 0; left: 0; bottom: 0;
-                height: 12rem;
+                height: 20rem;
                 width: 100%;
                 margin: auto 0;
-                padding: 0;
+                padding: 8rem 0 0;
             }
         }
         &.forest {
@@ -447,9 +448,12 @@
         }
         &.cardsfest {
             background-image: url('../images/ja.jpg');
+            &:hover {
+                background-image: url('../images/fullscreen-sites/cardsfest.png');
+            }
         }
         &.cardshirt {
-            background-image: url('https://farm6.staticflickr.com/5090/5378754404_4889d24c18_o.jpg');
+            background-image: url('../images/ja.jpg');
         }
         &.rjlou {
             background-image: url('https://farm4.staticflickr.com/3093/2572326342_0c64b0aafe_o.jpg');
@@ -462,6 +466,16 @@
         }
         &.christmas {
             background-image: url('../images/christmas-site.png');
+        }
+    }
+    .section.content {
+        padding-bottom: 0;
+        .highlight {
+            text-align: left;
+            pre {
+                max-height: 35rem;
+                overflow: all-scroll;
+            }
         }
     }
     @include media-query($tablet) {

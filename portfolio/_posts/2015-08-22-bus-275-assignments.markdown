@@ -2,7 +2,6 @@
 layout:		post
 title:		"BUS 275 Assignments"
 image:		bus275
-permalink:	/:title
 tags:		[design]
 
 ---

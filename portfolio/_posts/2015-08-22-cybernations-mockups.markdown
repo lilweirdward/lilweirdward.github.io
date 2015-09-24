@@ -2,7 +2,6 @@
 layout:		post
 title:		"Cybernations Mockups"
 image:		cybernations
-permalink:	/:title
 tags:		[design]
 
 ---

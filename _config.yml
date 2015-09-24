@@ -10,6 +10,7 @@ url: "http://lilweirdward.github.io" # the base hostname & protocol for your sit
 twitter_username:  lilweirdward
 github_username:   lilweirdward
 linkedin_username: zpwoodward
+permalink: :categories/:title/
 
 # Defaults
 defaults:

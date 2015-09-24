@@ -15,14 +15,14 @@ layout:	default
 
 		<h1>Web Development</h1>
 		<p>
-			Below are all of websites that I've ever designed and stored on my computer - i.e., the ones that I'm not horribly ashamed of.
+			Below are all of websites that I've ever designed, developed, and stored on my computer - i.e., the ones that I'm not horribly ashamed of. Some were for clients, and some were just for myself. Hopefully you like them!
 		</p>
 
 	</div>
 
 </div>
 
-{% assign sorted_websites = site.categories.portfolio | sort: 'title' %}
+{% assign sorted_websites = site.categories.portfolio | sort: 'priority' %}
 {% for website in sorted_websites %}
 {% if website.tags contains 'web' %}
 <a href="{{ website.url | prepend: site.baseurl }}">
@@ -68,6 +68,38 @@ layout:	default
     </div>
 
   </div>
+
+</a>
+{% endif %}
+{% endfor %}
+
+<div class="section content">
+
+	<div class="container">
+
+		<h1>Other Work</h1>
+		<p>
+			There was a lot of code and technical documents that I wrote throughout school or other events that doesn't exactly fall into the category of "complete websites that I've built" or "full design projects", and I'd like to give that code its moment of glory/shame. You probably aren't interested, which is why I stuck it at the bottom of this page. Please feel free to stop scrolling at this point if that's the case; there's nothing more to see afterwards (except that sweet, sweet footer).
+		</p>
+
+	</div>
+
+</div>
+
+{% assign sorted_websites = site.categories.portfolio | sort: 'title' %}
+{% for website in sorted_websites %}
+{% if website.tags contains 'other' %}
+<a href="{{ website.url | prepend: site.baseurl }}">
+
+	<div class="fw {{ website.image }}">
+
+		<div class="layer">
+
+			<h1>{{ website.title }}</h1>
+
+		</div>
+
+	</div>
 
 </a>
 {% endif %}
