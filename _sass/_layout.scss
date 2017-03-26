@@ -253,22 +253,37 @@
         }
     }
     &.cardsfest {
-        background-image: url('../images/ja.jpg');
+        background-image: url('/images/portfolio-cardsfest.jpg');
     }
     &.cardshirt {
-        background-image: url('https://farm6.staticflickr.com/5090/5378754404_4889d24c18_o.jpg');
+        background-image: url('/images/portfolio-cardshirt.jpg');
     }
     &.rjlou {
         background-image: url('https://farm4.staticflickr.com/3093/2572326342_0c64b0aafe_o.jpg');
     }
     &.hackhi {
-        background-image: url('https://farm9.staticflickr.com/8173/7967334632_c14fbeec5b_k.jpg');
+        background-image: url('/images/portfolio-hackhi.png');
     }
     &.bonso {
-        background-image: url('https://farm1.staticflickr.com/15/22078838_411e49db00_o.jpg');
+        background-image: url('/images/portfolio-bonso.jpg');
     }
     &.christmas {
-        background-image: url('../images/christmas-site.png');
+        background-image: url('/images/portfolio-christmas-site.png');
+    }
+    // &.bus275 {
+    //     background-image: url('/images/BUS275_solarroadways-handout.png');
+    // }
+    // &.cybernations {
+    //     background-image: url('/images/cybernations-mockup-cover.png');
+    // }
+    // &.portfolio {
+    //     background-image: url('/images/portfolio-mascots.png');
+    // }
+    &.cybernations, &.database, &.writing {
+        background-color: $blue;
+    }
+    &.bus275, &.portfolio, &.languages {
+        background-color: $green;
     }
 }
 
@@ -316,6 +331,29 @@
         }
         &.forest {
             background-image: url('https://farm9.staticflickr.com/8500/8343484593_1ffbdafe59_k.jpg');
+        }
+    }
+    .postnew {
+        width: 100%;
+        .image {
+            width: 100%;
+            height: 20rem;
+            margin-bottom: 2rem;
+            background-size: cover;
+            background-position: center;
+            @include media-query($tablet) {
+                height: 25rem;
+            }
+            &.forest {
+                background-image: url('https://farm9.staticflickr.com/8500/8343484593_1ffbdafe59_k.jpg');
+            }
+        }
+        h1 a {
+            color: black;
+        }
+        p.details {
+            text-align: center;
+            font-size: 1rem;
         }
     }
     &.home {
@@ -434,6 +472,9 @@
             text-align: center;
             padding: 7rem 0 3rem;
             @include background-image(radial-gradient(ellipse closest-side, rgba($black, 0.75), transparent));
+            a {
+                color: white;
+            }
             @include media-query($tablet) {
                 position: absolute;
                 top: 0; left: 0; bottom: 0;
@@ -447,25 +488,40 @@
             background-image: url('https://farm9.staticflickr.com/8500/8343484593_1ffbdafe59_k.jpg');
         }
         &.cardsfest {
-            background-image: url('../images/ja.jpg');
-            &:hover {
-                background-image: url('../images/fullscreen-sites/cardsfest.png');
-            }
+            background-image: url('/images/portfolio-cardsfest.jpg');
+            // &:hover {
+            //     background-image: url('/images/fullscreen-sites/cardsfest.png');
+            // }
         }
         &.cardshirt {
-            background-image: url('../images/ja.jpg');
+            background-image: url('/images/portfolio-cardshirt.jpg');
         }
         &.rjlou {
             background-image: url('https://farm4.staticflickr.com/3093/2572326342_0c64b0aafe_o.jpg');
         }
         &.hackhi {
-            background-image: url('https://farm9.staticflickr.com/8173/7967334632_c14fbeec5b_k.jpg');
+            background-image: url('/images/portfolio-hackhi.png');
         }
         &.bonso {
-            background-image: url('https://farm1.staticflickr.com/15/22078838_411e49db00_o.jpg');
+            background-image: url('/images/portfolio-bonso.jpg');
         }
         &.christmas {
-            background-image: url('../images/christmas-site.png');
+            background-image: url('/images/portfolio-christmas-site.png');
+        }
+        &.bus275 {
+            background-image: url('/images/BUS275_solarroads-handoutexplaination.png');
+        }
+        &.cybernations {
+            background-image: url('/images/cybernations-mockup-cover.png');
+        }
+        &.portfolio {
+            background-image: url('/images/portfolio-mascots.png');
+        }
+        &.database, &.writing {
+            background-color: $blue;
+        }
+        &.languages {
+            background-color: $green;
         }
     }
     .section.content {

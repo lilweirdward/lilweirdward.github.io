@@ -4,6 +4,8 @@ title:      "CARDS Fest"
 image:      cardsfest
 tags:       [web]
 priority:   1
+author:     Jecorey Arthur
+authorlink: http://cardsfest.cardshirt.org
 
 ---
 # UofL's Biggest Music Festival

@@ -3,6 +3,127 @@ layout:		post
 title:		"Hack HI!"
 image:		hackhi
 tags:		[web]
+author:     Ken McCown
+authorlink: https://www.flickr.com/photos/kenmccown/7790987562/sizes/l
 
 ---
+# My First Hackathon
+
 While working at Humana as a summer intern this past summer, I had the opportunity to help organize their first-ever intern hackathon. I worked with a committee to organize sponsors, speakers, rules, meals, and everything else that came with setting up a 36-hour hackathon. I also volunteered to build a website to advertise the hackathon and inform attendees of the rules and schedule of the event. We had a small timeframe, and I still had my normal intern project to keep up with, but I found the spare time necessary to build and refine a simple Single Page Application (SPA), with a few cool JQuery and SASS effects to boot. By the end of the internship, I’d received as much praise for the website as I had for anything else I did that summer. By the time this summer rolled around, I was proud to be asked to help the upcoming intern class refine it further for the second annual HackHI!
+
+# Code
+
+I'm not gonna lie, pretty much all of the code was really below average. I'll post some of the Javascript on here since it's not as pumpkin-spice basic as everything else here. If you *really* want to see it, I guess you could [check out the repo](https://github.com/lilweirdward/hackhi). 
+
+{% highlight js %}
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > $('#FAQ').offset().top) {
+        $('.section.header').removeClass('off');
+    }
+    else {
+        $('.section.header').addClass('off');
+    }
+});
+
+function slideCards(cards, active) {
+    $.each(cards, function(index, value) {
+        if (value) {
+            $('#card' + (index + 2)).addClass('moved');
+        }
+        else {
+            $('#card' + (index + 2)).removeClass('moved');
+        }
+        if ((index + 1) == active) {
+            $('#card' + (index + 1)).addClass('active');
+        }
+        else {
+            $('#card' + (index + 1)).removeClass('active');
+        }
+    });
+};
+
+$(document).ready(function() {
+    $('#card1').click(function() {
+        slideCards([false, false, false, false, false, false, false, false, false, false, false], 1);
+    })
+    $('#card2').click(function() {
+        slideCards([true, false, false, false, false, false, false, false, false, false, false], 2);
+    })
+    $('#card3').click(function() {
+        slideCards([true, true, false, false, false, false, false, false, false, false, false], 3);
+    })
+    $('#card4').click(function() {
+        slideCards([true, true, true, false, false, false, false, false, false, false, false], 4);
+    })
+    $('#card5').click(function() {
+        slideCards([true, true, true, true, false, false, false, false, false, false, false], 5);
+    })
+    $('#card6').click(function() {
+        slideCards([true, true, true, true, true, false, false, false, false, false, false], 6);
+    })
+    $('#card7').click(function() {
+        slideCards([true, true, true, true, true, true, false, false, false, false, false], 7);
+    })
+    $('#card8').click(function() {
+        slideCards([true, true, true, true, true, true, true, false, false, false, false], 8);
+    });
+    // $('#card9').click(function() {
+    //  slideCards([true, true, true, true, true, true, true, true, false, false, false]);
+    // })
+    // $('#card10').click(function() {
+    //  slideCards([true, true, true, true, true, true, true, true, true, false, false]);
+    // })
+    // $('#card11').click(function() {
+    //  slideCards([true, true, true, true, true, true, true, true, true, true, false]);
+    // })
+    // $('#card12').click(function() {
+    //  slideCards([true, true, true, true, true, true, true, true, true, true, true]);
+    // });
+
+    $('.sandwichbar').click(function() {
+        $('.section.header').addClass('on');
+    });
+
+    $('.section.header span.x').click(function() {
+        $('.section.header').removeClass('on');
+    });
+
+    $('span.credits').click(function() {
+        $('p.contributors').slideToggle(500);
+    });
+
+    $('.section.header a, #Home a').click(function () {
+        var href = $(this).attr('href').toString();
+        var top = $(href).offset();
+        $('html, body').animate({
+            scrollTop: (top.top + 5)
+        }, 2000);
+        $('.section.header').removeClass('on');
+    });
+
+    $('#nextsection').click(function() {
+        $('html, body').animate({
+            scrollTop: ($('#FAQ').offset().top + 5)
+        }, 1000);
+    });
+
+    $("#internButtonForm").click(function() {
+        $('#internBox').addClass('on');
+        // e.preventDefault();
+    });
+
+    $('#internBox span.x').click(function() {
+        $('#internBox').removeClass('on');
+    });
+
+    $("#employeeButtonForm").click(function() {
+        $("#employeeBox").addClass('on');
+        // e.preventDefault();
+    });
+
+    $('#employeeBox span.x').click(function() {
+        $('#employeeBox').removeClass('on');
+    });
+});
+{% endhighlight %}

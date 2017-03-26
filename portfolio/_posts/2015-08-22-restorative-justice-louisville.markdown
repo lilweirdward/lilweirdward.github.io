@@ -4,6 +4,8 @@ title:		"Restorative Justice Louisville"
 image:		rjlou
 tags:		[web]
 priority:	4
+author:     w.marsh
+authorlink: https://www.flickr.com/photos/40943981@N00/2572326342/sizes/l
 
 ---
 # "Junior" Design Project

@@ -3,8 +3,14 @@ layout:		post
 title:		"BONSO"
 image:		bonso
 tags:		[web]
+author:     John O'Nolan
+authorlink: https://www.flickr.com/photos/johnonolan/5378754404
 
 ---
+# CardShirt Without the CardShirt
+
 Around January of 2014, CardShirt voluntarily revoked its RSO status, and set out as its own non-profit company separate from the University of Louisville. The rebranded themselves as BONSO, and I followed them as their web developer. The following is the official description that was written for the website: “Bonso is a legal non-for-profit based in the Louisville area that believes in creating the needed change in society. In order to generate the funds to Benefit Others Needing Support for Opportunities, Bonso sells affordable, high quality promotional products to its consumers while designating a portion of the sales revenue to the community through either a scholarship or donation. The company also provides invaluable, real-world experience to our student workers by providing the unique opportunity to operate in each division of the business structure.”
 	
-I never completely finished the website before BONSO rebranded itself back to CardShirt and became an RSO again, but it still was one of my proudest websites and a huge turning point in how I thought about design. 
+I never completely finished the website before BONSO rebranded itself back to CardShirt and became an RSO again, but it still was one of my proudest websites at the time and a huge turning point in how I thought about design. You can check out the code [at the repo, as usual](https://github.com/lilweirdward/bonso), or see my still-pretty-cool design [here](http://bonso.github.io/).
+
+Sadly, no code. I love the design, but there's really nothing unique about the code outside of what I normally write.

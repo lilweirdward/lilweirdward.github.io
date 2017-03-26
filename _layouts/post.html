@@ -11,8 +11,11 @@ layout: default
 
 	    <h1 class="post-title">{{ page.title }}</h1>
 	    <p class="post-meta">
-	    	{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+	    	{{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}
 	    </p>
+      <p class="post-meta">
+        {% if page.author %}<a href="{{ page.authorlink }}">Source: {{ page.author }}</a>{% endif %}
+      </p>
 
 	</div>
 
@@ -26,7 +29,7 @@ layout: default
 
 	</div>
 
-	<a href="/portfolio/" class="more"><i class="fa fa-hand-o-left"></i> Portfolio</a>
+	<a href="/{{ page.categories | first }}/" class="more"><i class="fa fa-hand-o-left"></i> {{ page.categories | first }}</a>
 
   </div>
 
