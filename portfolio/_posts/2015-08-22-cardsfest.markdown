@@ -3,7 +3,7 @@ layout:     post
 title:      "CARDS Fest"
 image:      cardsfest
 tags:       [web]
-priority:   1
+priority:   3
 author:     Jecorey Arthur
 authorlink: http://cardsfest.cardshirt.org
 

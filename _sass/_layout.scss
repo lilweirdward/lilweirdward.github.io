@@ -270,6 +270,9 @@
     &.christmas {
         background-image: url('/images/portfolio-christmas-site.png');
     }
+    &.blofish {
+        background-image: url('/images/portfolio-blofish.png');
+    }
     // &.bus275 {
     //     background-image: url('/images/BUS275_solarroadways-handout.png');
     // }
@@ -522,6 +525,9 @@
         }
         &.languages {
             background-color: $green;
+        }
+        &.blofish {
+            background-image: url('/images/portfolio-blofish.png');
         }
     }
     .section.content {

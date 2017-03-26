@@ -1,0 +1,19 @@
+---
+layout:		post
+title:		"BLoFISH Clothing"
+image:		blofish
+tags:		[web]
+priority:   1
+
+---
+# All4All
+
+I was approached to design a website for an up-and-coming entrepreneur who wanted to build a new website for his startup company called BLoFISH Clothing. We met at places like the University of Louisville, Bellarmine University, and the living room in his house, always with one goal in mind: build a revolutionary website that communicated the unique and forward-thinking nature of his company, which was to create shirts neutral to all genders and body types. We launched in December of that year, and the company - and its website - took off.
+
+During that time, I really learned not only what it meant to design a website, but how to maintain one. It was where I really learned what it meant to install an SSL, how to configure Apache to withstand significant web traffic, and how to make periodic updates to small bugs over a significant period of time. I was also a strong partner with the owner of the company for over a year, and was able to watch an ambitious man take a company from his living room to multiple physical locations, concerts and events around the country, and significant yearly revenue. It was a one-of-a-kind experience for someone my age. Unfortunately, in 2017, our paths parted, and the company moved its website to a different platform. However, I've still been in touch, and was even able to help with technical issues occasionally.     
+
+You can see the website privately hosted [on my DigitalOcean account](http://blofishdesign.zach-woodward.com), and feel free to check out the [company](https://www.blofish.com) - they really are a fantastic group!
+
+# Code
+
+I haven't had the opportunity to drop some code in here yet. Hopefully that will happen soon!
