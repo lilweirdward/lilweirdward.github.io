@@ -3,7 +3,7 @@ layout:     post
 title:      "CardShirt"
 image:      cardshirt
 tags:       [web]
-priority:   1
+priority:   3
 author:     Kentucky National Guard Public Affairs
 authorlink: https://www.flickr.com/photos/kyngpao/9723269345
 

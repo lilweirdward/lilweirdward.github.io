@@ -3,7 +3,7 @@ layout:     post
 title:      "Zach's Christmas List"
 image:      christmas
 tags:       [web]
-priority:   3
+priority:   4
 
 ---
 # All I Want for Christmas
